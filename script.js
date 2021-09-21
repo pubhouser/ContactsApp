@@ -200,12 +200,12 @@ class ContactsApp extends Contacts {
 
     set storage(data) {
         localStorage.setItem('contacts', JSON.stringify(data));
-        this.setCookie('contactExp', '1', { 'max-age': 10 });
+        this.setCookie('contactsExp', '1', { 'max-age': 10 });
     }
 
     get storage() {
-        const contantExp = this.getCookie('contantExp');
-        if (!contantExp) localStorage.removeItem('contantExp');
+        const contactsExp = this.getCookie('contactsExp');
+        if (!contactsExp) localStorage.removeItem('contacts');
 
         let data = localStorage.getItem('contacts');
 
