@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/img.jpg);
+}
+
+.contacts {
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px #000;
+    background-color: rgb(245, 132, 2);
+    border-radius: 10px;
+    opacity: .8;
+}
+
+.contacts__form {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+h3 {
+    margin: 20px 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #3276b1;
+    text-shadow: 0 0 5px rgb(245, 229, 2);
+}
+
+.contacts__form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn__form {
+    width: 100px;
+    padding: 10px;
+    background-color: #3276b1;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    line-height: 25px;
+    list-style: none;
+    width: 250px;
+    margin: 5px;
+    font-size: 18px;
+    border: 5px solid;
+    border-radius: 4px;
+    background-color: #7fa7c7;
+    color:rgb(245, 200, 2);
+    text-shadow: 0 0 4px #000;
+}
+
+.contact:last-child {
+    margin-bottom: 20px;
+}
+
+.contact__name {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.contact__remove {
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(245, 2, 2);
+    color: #fff;
+    cursor: pointer;
+
+}
